@@ -73,7 +73,7 @@ function wp_logout()
     $user_id = get_current_user_id();
 
     wp_destroy_current_session();
-    wp_clear_auth_cookie();
+    // wp_clear_auth_cookie();
     wp_set_current_user(0);
 
     /**
